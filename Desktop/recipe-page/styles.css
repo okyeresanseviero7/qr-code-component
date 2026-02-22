@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: 'YoungSerif';
+  src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(30, 10%, 34%);
+  line-height: 1.6;
+}
+.container {
+  padding: 1.5rem;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1 {
+  font-family: 'YoungSerif', serif;
+  font-size: 2rem;
+  color: hsl(24, 5%, 18%);
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-family: 'YoungSerif', serif;
+  color: hsl(14, 45%, 36%);
+  margin-top: 2rem;
+}
+.preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.preparation-time h2 {
+  color: hsl(332, 51%, 32%);
+}
+
+.time {
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+ul, ol {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}
+
+ul li::marker,
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.topic {
+  font-weight: 700;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  margin: 2rem 0;
+}
+.nutrients p {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  margin: 0;
+}
+
+.nutrients span {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+body {
+  background-color: hsl(31, 53%, 90%);
+}
+main {
+   max-width: 700px;
+    margin: 4rem auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+img {
+  max-width: 650px;
+  margin: 2rem auto 0 auto;
+  border-radius: 10px;
+
+}
+}
